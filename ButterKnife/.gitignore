@@ -1,14 +1,25 @@
 *.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+#/.idea/workspace.xml
+#/.idea/libraries
+.idea
 .DS_Store
 /build
 /captures
-.externalNativeBuild
-.cxx
+#/
+
+# 忽略test目录
+**/androidTest
+**/test
+# 忽略debug release目录
+**/debug
+**/release
+# 获取内存泄漏信息文件
+*.hprof
+# 忽略迁移androidx的备份文件
+*.rar
+*.zip
+
+# 忽略build生成的文件
+**/build
